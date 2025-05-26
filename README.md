@@ -1,2 +1,2 @@
 # Origin-lite
-Open source and fast lite version of Origin Client
+Open source and fast lite Texture Pack version of Origin Client
