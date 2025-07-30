@@ -539,7 +539,7 @@
                     "github@start.github_button": {}
                   },
                   {
-                    "padding": {
+                    "padding2": {
                       "size": [
                         "2px",
                         "100%"
