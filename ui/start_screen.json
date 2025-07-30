@@ -2,7 +2,7 @@
   "namespace": "start",
   "icon_github": {
     "type": "image",
-    "texture": "textures/origin/icons/github",
+    "texture": ".xelo/textures/icons/github",
     "size": [
       15,
       15
@@ -10,7 +10,7 @@
   },
   "icon_close": {
     "type": "image",
-    "texture": "textures/origin/icons/x",
+    "texture": ".xelo/textures/icons/x",
     "size": [
       15,
       15
@@ -18,7 +18,7 @@
   },
   "icon_youtube": {
     "type": "image",
-    "texture": "textures/origin/icons/youtube",
+    "texture": ".xelo/textures/icons/youtube",
     "size": [
       15,
       15
@@ -26,7 +26,7 @@
   },
   "icon_discord": {
     "type": "image",
-    "texture": "textures/origin/icons/discord",
+    "texture": ".xelo/textures/icons/discord",
     "size": [
       15,
       15
@@ -34,7 +34,7 @@
   },
   "label_panel": {
     "type": "image",
-    "texture": "textures/origin/buttons/buttoni",
+    "texture": ".xelo/textures/buttons/buttoni",
     "alpha": 0.4,
     "size": [
       "100%c + 4px",
@@ -69,7 +69,7 @@
     ]
   },
   "pack_name_label@label_panel": {
-    "$text": "Origin Lite v2.1"
+    "$text": "Xelo Lite v0.1 §cBeta Test"
   },
   "footer_panel": {
     "type": "panel",
@@ -183,9 +183,9 @@
   "menu_main_button@common.button": {
     "$button_type_panel|default": "common_buttons.new_ui_binding_button_label",
     "$button_state_panel|default": "start.button_state_panel",
-    "$default_button_texture": "textures/origin/buttons/buttoni",
-    "$hover_button_texture": "textures/origin/buttons/buttoni",
-    "$pressed_button_texture": "textures/origin/buttons/buttoni",
+    "$default_button_texture": ".xelo/textures/buttons/buttoni",
+    "$hover_button_texture": ".xelo/textures/buttons/buttoni",
+    "$pressed_button_texture": ".xelo/textures/buttons/buttoni",
     "$default_text_color": "$dark_button_default_text_color",
     "$hover_text_color": "$dark_button_hover_text_color",
     "$pressed_text_color": "$dark_button_pressed_text_color",
@@ -388,7 +388,7 @@
   },
   "start_screen_background": {
     "type": "image",
-    "texture": "textures/origin/bg/pano1",
+    "texture": ".xelo/textures/background/panorama",
     "layer": -3,
     "fill": true,
     "size": [
@@ -398,7 +398,7 @@
   },
   "main_buttons_panel": {
     "type": "image",
-    "texture": "textures/origin/buttons/buttoni",
+    "texture": ".xelo/textures/buttons/buttoni",
     "alpha": 0.25,
     "size": [
       200,
@@ -496,7 +496,7 @@
       {
         "social_card_panel": {
           "type": "image",
-          "texture": "textures/origin/buttons/buttoni",
+          "texture": ".xelo/textures/buttons/buttoni",
           "anchor_from": "top_right",
           "anchor_to": "top_right",
           "alpha": 0.3,
@@ -559,7 +559,7 @@
       {
         "profile_card_panel": {
           "type": "image",
-          "texture": "textures/origin/buttons/buttoni",
+          "texture": ".xelo/textures/buttons/buttoni",
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "alpha": 0.3,
@@ -642,7 +642,7 @@
       {
         "x": {
           "type": "image",
-          "texture": "textures/origin/buttons/buttoni",
+          "texture": ".xelo/textures/buttons/buttoni",
           "size": [
             25,
             25

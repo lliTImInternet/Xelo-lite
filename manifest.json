@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Xelo-Lite",
+    "description": "A lightweight resource pack for Minecraft\n\n§eThis pack is in beta testing, please report any bugs you find on the GitHub repository or in the Discord.",
+    "uuid": "aa45ace8-08c0-4130-ba5c-04a7a14d4649",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ],
+    "author": "lliT"
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "44b85e84-a344-416c-bd09-1cb53ae984ea",
+      "version": [
+        1,
+        21,
+        0
+      ]
+    }
+  ]
+}
