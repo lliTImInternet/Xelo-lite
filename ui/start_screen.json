@@ -37,8 +37,8 @@
     "texture": ".xelo/textures/buttons/buttoni",
     "alpha": 0.4,
     "size": [
-      "100%c + 4px",
-      10
+      "100%c + 8px",
+      12
     ],
     "controls": [
       {
