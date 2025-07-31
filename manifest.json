@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Moron",
+    "description": "Sybau",
+    "uuid": "d8a41522-3eab-47e6-976f-2b348bf9462c",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      16,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "92c0172f-f271-463b-bca1-e7a58aaddd69",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

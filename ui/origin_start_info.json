@@ -1,0 +1,75 @@
+{
+  "namespace": "origin_startinfo",
+  "toggledinfo_image": {
+    "type": "image",
+    "texture": "textures/origin/bg/info",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "layer": 100,
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "infor_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "info_toggle@common_toggles.light_text_toggle": {
+    "layer": 1,
+    "$toggle_view_binding_name": "infor_toggle",
+    "$button_text": "information",
+    "$border_alpha": 1,
+    "layer": 5,
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      80,
+      20
+    ],
+    "offset": [
+      82,
+      0
+    ]
+  },
+  "pp_toggle@common_toggles.light_text_toggle": {
+    "$toggle_view_binding_name": "pp",
+    "$button_text": "P",
+    "layer": 5,
+    "$border_alpha": 1,
+    "offset": [
+      164,
+      0
+    ],
+    "size": [
+      20,
+      20
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left"
+  },
+  "toggledinfo_image1": {
+    "type": "image",
+    "texture": "textures/ui/Black",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [
+      999999,
+      999999
+    ],
+    "layer": 1,
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "infor_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "alpha": 0.45
+  }
+}
