@@ -20,7 +20,6 @@
     ]
   },
   "info_toggle@common_toggles.light_text_toggle": {
-    "layer": 1,
     "$toggle_view_binding_name": "infor_toggle",
     "$button_text": "information",
     "$border_alpha": 1,
