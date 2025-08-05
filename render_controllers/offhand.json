@@ -1,0 +1,57 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.offhand_slots": {
+            "arrays": {
+                "textures": {
+                    "array.armor": [
+                        "texture.totem",
+                        "texture.arrow",
+                        "texture.firework",
+                        "texture.nautilus",
+                        "texture.map_filled",
+                        "texture.shield"
+                    ]
+                }
+            },
+            "part_visibility": [
+                {
+                    "*": "q.get_equipped_item_name(1) == 'totem_of_undying' || q.get_equipped_item_name(1) == 'arrow' || q.get_equipped_item_name(1) == 'firework_rocket' || q.get_equipped_item_name(1) == 'nautilus_shell' || q.get_equipped_item_name(1) == 'filled_map' || q.get_equipped_item_name(1) == 'shield'"
+                }
+            ],
+            "is_hurt_color": {},
+            "on_fire_color": {},
+            "overlay_color": {},
+            "ignore_lighting": true,
+            "textures": [
+                "array.armor[(((q.get_equipped_item_name(1) == 'totem_of_undying') ? 0) + (q.get_equipped_item_name(1) == 'arrow') + ((q.get_equipped_item_name(1) == 'firework_rocket') ? 2) + ((q.get_equipped_item_name(1) == 'nautilus_shell') ? 3) + ((q.get_equipped_item_name(1) == 'filled_map') ? 4) + ((q.get_equipped_item_name(1) == 'shield') ? 5)) ]"
+            ],
+            "geometry": "Geometry.offhand_slot",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ]
+        },
+        "controller.render.offhand_slots_background": {
+            "part_visibility": [
+                {
+                    "*": "q.get_equipped_item_name(1) == 'totem_of_undying' || q.get_equipped_item_name(1) == 'arrow' || q.get_equipped_item_name(1) == 'firework_rocket' || q.get_equipped_item_name(1) == 'nautilus_shell' || q.get_equipped_item_name(1) == 'filled_map' || q.get_equipped_item_name(1) == 'shield'"
+                }
+            ],
+            "is_hurt_color": {},
+            "on_fire_color": {},
+            "overlay_color": {},
+            "ignore_lighting": true,
+            "textures": [
+                "texture.offhand_slot"
+            ],
+            "geometry": "Geometry.offhand_slot_bg",
+            "materials": [
+                {
+                    "*": "Material.alpha_opacity"
+                }
+            ]
+        }
+    }
+}

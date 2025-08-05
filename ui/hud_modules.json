@@ -1,0 +1,2371 @@
+{
+  "base_toggle": {
+    "$offset|default": "",
+    "$texture|default": "",
+    "controls": [
+      {
+        "label": {
+          "color": "$text_color",
+          "font_type": "default",
+          "layer": 3,
+          "offset": "$text_offset",
+          "text": "$button_text",
+          "type": "label"
+        }
+      }
+    ],
+    "layer": 2,
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "texture": "$texture",
+    "type": "image"
+  },
+  "base_toggle_icon": {
+    "$offset|default": "",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "icon": {
+          "alpha": 0.85,
+          "layer": 3,
+          "offset": [
+            "0",
+            "-50%"
+          ],
+          "size": [
+            "16%",
+            16
+          ],
+          "texture": "$icon_texture",
+          "type": "image"
+        }
+      },
+      {
+        "padding": {
+          "alpha": 0,
+          "layer": 3,
+          "size": [
+            1,
+            1
+          ],
+          "texture": "textures/items/diamond_sword",
+          "type": "image"
+        }
+      },
+      {
+        "label": {
+          "$text_offset": [
+            "-30%",
+            "-10%"
+          ],
+          "$ytils_font_scale": 0.9,
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "color": [
+            0.9,
+            0.9,
+            0.9
+          ],
+          "font_scale_factor": "$ytils_font_scale",
+          "font_type": "default",
+          "layer": 3,
+          "max_size": [
+            "84% - 2px",
+            "100% - 2px"
+          ],
+          "offset": "$text_offset",
+          "text": "$button_text",
+          "type": "label"
+        }
+      }
+    ],
+    "layer": 2,
+    "orientation": "horizontal",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "type": "stack_panel"
+  },
+  "fjxtwd": {
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "modules@hud_modules.modules1": {}
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "modules@hud_modules.modules2": {}
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5%",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "modules@hud_modules.modules3": {}
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5%",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "modules@hud_modules.modules4": {}
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5%",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "modules@hud_modules.modules7": {}
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5%",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "modules@hud_modules.modules8": {}
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5%",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "modules@hud_modules.modules9": {}
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5%",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "modules@hud_modules.modules19": {}
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5%",
+            2
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      }
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "type": "stack_panel"
+  },
+  "hud_menu": {
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "bg@hud_modules.hud_menu_bg": {}
+      },
+      {
+        "dropshadow@hud_modules.hud_menu_dropshadow": {}
+      },
+      {
+        "content@hud_modules.hud_menu_content": {}
+      }
+    ],
+    "layer": 999,
+    "offset": [
+      2,
+      13
+    ],
+    "size": [
+      "65%",
+      "80%"
+    ],
+    "type": "panel"
+  },
+  "hud_menu_bg": {
+    "alpha": 0,
+    "layer": 998,
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "texture": "origin/bg/modulesdarkbg",
+    "type": "image"
+  },
+  "hud_menu_content": {
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "hud_menu_tabs@hud_modules.hud_menu_tabs": {}
+      },
+      {
+        "padding": {
+          "alpha": 0,
+          "size": [
+            3.5,
+            3.5
+          ],
+          "texture": "textures/items/diamond_sword",
+          "type": "image"
+        }
+      },
+      {
+        "hud_menu_main_content@hud_modules.hud_menu_main_content": {
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "modules_panel",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ],
+    "layer": 1000,
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "type": "stack_panel"
+  },
+  "hud_menu_dropshadow": {
+    "alpha": 1,
+    "alpha": 0,
+    "layer": 1000,
+    "size": [
+      "100%+10px",
+      "100%+10px"
+    ],
+    "texture": "origin/bg/clear",
+    "type": "image"
+  },
+  "hud_menu_main_content": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "hud_menu_main_content": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "controls": [
+            {
+              "padding": {
+                "alpha": 0,
+                "size": [
+                  "2%",
+                  "2%"
+                ],
+                "texture": "items/diamond_sword",
+                "type": "image"
+              }
+            },
+            {
+              "modules@hud_modules.mods_list": {
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "offset": [
+                  0,
+                  0
+                ],
+                "size": [
+                  "95%",
+                  "100%"
+                ]
+              }
+            },
+            {
+              "padding1": {
+                "alpha": 0,
+                "size": [
+                  "2%",
+                  "2%"
+                ],
+                "texture": "items/diamond_sword",
+                "type": "image"
+              }
+            }
+          ],
+          "layer": 1003,
+          "layer": "10",
+          "orientation": "horizontal",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "type": "stack_panel"
+        }
+      }
+    ],
+    "layer": 1003,
+    "size": [
+      "100%",
+      "85.5%"
+    ],
+    "texture": "origin/bg/modulesdarkbg",
+    "type": "image",
+    "anims": [
+      "@hud_modules.anim_mod_menu"
+    ],
+    "animation_reset_name": "buttonorigin_hide_menu"
+  },
+  "hud_menu_outline": {
+    "layer": 997,
+    "size": [
+      "100% + 2px",
+      "100% + 2px"
+    ],
+    "texture": "origin/bg/outline",
+    "type": "image"
+  },
+  "hud_menu_tabs": {
+    "controls": [
+      {
+        "bg@hud_modules.hud_menu_tabs_bg": {}
+      },
+      {
+        "tabs@hud_modules.tabs_panel": {}
+      }
+    ],
+    "layer": 1003,
+    "offset": [
+      0,
+      0
+    ],
+    "size": [
+      "100%",
+      "13.5% - 1px"
+    ],
+    "type": "panel"
+  },
+  "hud_menu_tabs_bg": {
+    "alpha": 1,
+    "layer": 1001,
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "texture": "origin/bg/modulesdarkbg",
+    "type": "image"
+  },
+  "hud_menu_vertical_divider": {
+    "layer": 9999,
+    "size": [
+      1,
+      1
+    ],
+    "texture": "origin/ui/divider",
+    "type": "image"
+  },
+  "hud_modules_panel": {
+    "controls": [
+      {
+        "hud_menu@hud_modules.hud_menu": {
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ytils_hide_menu",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "animation_reset_name": "buttonorigin_hide_menu",
+          "anims": [
+            "@hud.anim_mod_menu"
+          ]
+        }
+      }
+    ],
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "type": "panel"
+  },
+  "last": {
+    "size": [
+      "8",
+      17.5
+    ],
+    "type": "panel"
+  },
+  "layout_panel@hud_modulesoriginp": {
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "layouttext": {
+          "controls": [
+            {
+              "label_modules": {
+                "color": [
+                  1,
+                  1,
+                  1
+                ],
+                "font_size": "large",
+                "font_type": "MinecraftTen",
+                "text": "Coming soon..",
+                "text_alignment": "center",
+                "type": "label"
+              }
+            }
+          ],
+          "layer": "99999",
+          "size": [
+            "80%",
+            "13%"
+          ],
+          "texture": "origin/bg/background_header",
+          "type": "image"
+        }
+      }
+    ],
+    "size": [
+      "100%",
+      "100%"
+    ]
+  },
+  "layoutfooter": {
+    "controls": [
+      {
+        "label_modules": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "font_scale_factor": 0.9,
+          "font_size": "large",
+          "font_type": "MinecraftTen",
+          "text": "LAYOUT",
+          "text_alignment": "center",
+          "type": "label"
+        }
+      }
+    ],
+    "layer": "99999",
+    "size": [
+      "100%",
+      "13%"
+    ],
+    "texture": "origin/bg/background_header",
+    "type": "image"
+  },
+  "logo": {
+    "texture": "origin/icons/icon_modules",
+    "type": "image"
+  },
+  "main_toggle_content@common_toggles.light_text_toggle": {
+    "$border_alpha": 0,
+    "$default_texture": "origin/buttons/title_green_button/normal",
+    "$hover_texture": "origin/buttons/title_green_button/hover",
+    "$light_toggle_checked_default_text_color": "white",
+    "$light_toggle_checked_hover_text_color": "white",
+    "$light_toggle_default_text_color": [
+      0.7,
+      0.7,
+      0.7
+    ],
+    "$light_toggle_hover_text_color": "white",
+    "$locked_texture": "origin/bg/outline",
+    "$locked_texture": "origin/buttons/title_green_button/pressed",
+    "$pressed_no_hover_texture": "origin/bg/outline",
+    "$pressed_no_hover_texture": "origin/buttons/title_green_button/pressed",
+    "$pressed_texture": "origin/bg/outline",
+    "$pressed_texture": "origin/buttons/title_green_button/normal_pressed",
+    "$radio_toggle_group": true,
+    "$toggle_group_default_selected": 1,
+    "$toggle_name": "mod_tab",
+    "$toggle_on_hover_binding_name": "#toggle_on_hover",
+    "$toggle_on_hover_binding_type": "global",
+    "$toggle_tab_focus_binding_name": "#mod_tab_focus_precedence",
+    "$toggle_tab_focus_binding_type": "global"
+  },
+  "mods_list@common.scrolling_panel": {
+    "$scrolling_content": "hud_modules.fjxtwd",
+    "$show_background": false,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [
+      "100%",
+      "100%"
+    ]
+  },
+  "modules": {
+    "controls": [
+      {
+        "modules@hud_modules.fjxtwd": {}
+      }
+    ],
+    "size": [
+      "90%",
+      "100%"
+    ],
+    "type": "panel"
+  },
+  "modules19": {
+    "controls": [
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "Debug menu",
+          "$icon_texture": "origin/icons/f3",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "p30",
+          "$toggle_default_state": "$f3",
+          "$toggle_view_binding_name": "p30",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Displays the debug menu in the top left"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "Java chat",
+          "$icon_texture": "origin/icons/q",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "p31",
+          "$toggle_default_state": "$javachat",
+          "$toggle_view_binding_name": "p31",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Turns your bedrock chat into Java chat"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "Better vignette",
+          "$icon_texture": "origin/icons/d",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "p32",
+          "$toggle_default_state": "$bettervig",
+          "$toggle_view_binding_name": "p32",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Displays a better vignette to the game"
+        }
+      }
+    ],
+    "size": [
+      "100% - 2px",
+      "100%c"
+    ],
+    "type": "stack_panel"
+  },
+  "modules3": {
+    "controls": [
+      {
+        "button@common_toggles.animated_toggle": {
+          "$button_context": "Displays keystrokes on the bottom right",
+          "$button_text": "Keystrokes",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "k",
+          "$toggle_default_state": "$keystrokes",
+          "$toggle_type": "button",
+          "$toggle_view_binding_name": "k",
+          "size": [
+            "100%",
+            37
+          ]
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "button@common_toggles.animated_toggle": {
+          "$button_context": "Displays clock and compass on the bottom left",
+          "$button_text": "Clock and compass",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "z",
+          "$toggle_default_state": "$clockandcompass",
+          "$toggle_type": "button",
+          "$toggle_view_binding_name": "z",
+          "size": [
+            "100%",
+            37
+          ]
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "button@common_toggles.animated_toggle": {
+          "$button_context": "Displays the icon of the texture pack ur using on the top left",
+          "$button_text": "Pack Display",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "packdisplay",
+          "$toggle_default_state": "$packdisplay",
+          "$toggle_type": "button",
+          "$toggle_view_binding_name": "packdisplay",
+          "size": [
+            "100%",
+            37
+          ]
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature@common_toggles.animated_toggle": {
+          "$button_text": "hotbar switcher",
+          "$icon_texture": "origin/icons/hotbar_hidari",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "hud_hotbar_selector",
+          "$text_align": "center",
+          "$toggle_default_state": "$hotbarswitcher",
+          "$toggle_view_binding_name": "hud_hotbar_selector",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Displays quick hotbar selection"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature6@common_toggles.animated_toggle": {
+          "$button_text": "inventory hud",
+          "$icon_texture": "origin/icons/chest",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "hud_inv",
+          "$text_align": "center",
+          "$toggle_default_state": "$inventoryhud",
+          "$toggle_view_binding_name": "hud_inv",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Displays your whole inventory on the screen"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature7@common_toggles.animated_toggle": {
+          "$button_text": "Inventory counter",
+          "$icon_texture": "textures/ui/icon_summer",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "invcounter",
+          "$toggle_default_state": "$invcounter",
+          "$toggle_view_binding_name": "invcounter",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Shows the storage space left"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature7@common_toggles.animated_toggle": {
+          "$button_text": "Vhs Filter",
+          "$icon_texture": "textures/ui/icon_summer",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "10",
+          "$toggle_default_state": "$vhs",
+          "$toggle_view_binding_name": "10",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Vhs Filter like horror and retro games"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature7@common_toggles.animated_toggle": {
+          "$button_text": "World Name",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "worldname",
+          "$toggle_default_state": "$worldname",
+          "$toggle_view_binding_name": "worldname",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Shows the name of ur world"
+        }
+      }
+    ],
+    "size": [
+      "100% - 2px",
+      "100%c"
+    ],
+    "type": "stack_panel"
+  },
+  "modules4": {
+    "controls": [
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "Darkness filter",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "20",
+          "$text_align": "center",
+          "$toggle_default_state": "$darkness",
+          "$toggle_view_binding_name": "20",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Darkness overlay on your screen"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature6@common_toggles.animated_toggle": {
+          "$button_text": "Fade overlay(goth)",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "30",
+          "$text_align": "center",
+          "$toggle_default_state": "$fade",
+          "$toggle_view_binding_name": "30",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Fade overlay on your screen"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature7@common_toggles.animated_toggle": {
+          "$button_text": "Warm Tone filter",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "40",
+          "$text_align": "center",
+          "$toggle_default_state": "$warmtone",
+          "$toggle_view_binding_name": "40",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Warm overlay on your screen"
+        }
+      }
+    ],
+    "size": [
+      "100% - 2px",
+      "100%c"
+    ],
+    "type": "stack_panel"
+  },
+  "modules7": {
+    "controls": [
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "Waifu Display",
+          "$icon_texture": "origin/icons/waifu",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "waifu",
+          "$toggle_default_state": "$waifu",
+          "$toggle_view_binding_name": "waifu",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Take a shower bro"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "Armor hud",
+          "$icon_texture": "textures/items/diamond_chestplate",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "hud_armor",
+          "$toggle_default_state": "$armorhud",
+          "$toggle_view_binding_name": "hud_armor",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Displays the armor hud on the top right of ur screen"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "Offhand hud",
+          "$icon_texture": "textures/shield",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "offhud",
+          "$toggle_default_state": "$offhandhud",
+          "$toggle_view_binding_name": "offhud",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Shows the item in your off hand like java"
+        }
+      }
+    ],
+    "size": [
+      "100% - 2px",
+      "100%c"
+    ],
+    "type": "stack_panel"
+  },
+  "modules8": {
+    "controls": [
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "Playerlist toggle",
+          "$icon_texture": "textures/items/leather_helmet1",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "playerlist",
+          "$toggle_default_state": "$playerlisttoggle",
+          "$toggle_view_binding_name": "playerlist",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Allows to see your player list"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "F1 Button",
+          "$icon_texture": "origin/icons/f1",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "f1",
+          "$toggle_view_binding_name": "f1",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Displays the f1 button on the screen"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image"
+        }
+      },
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "F8 Button",
+          "$icon_texture": "origin/icons/f8",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "f8",
+          "$toggle_view_binding_name": "f8",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Displays the f8 button on the screen"
+        }
+      }
+    ],
+    "size": [
+      "100% - 2px",
+      "100%c"
+    ],
+    "type": "stack_panel"
+  },
+  "modules9": {
+    "controls": [
+      {
+        "feature5@common_toggles.animated_toggle": {
+          "$button_text": "Crosshairs",
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "defaultt",
+          "$toggle_view_binding_name": "defaultt",
+          "size": [
+            "100%",
+            37
+          ],
+          "$button_context": "Displays crosshairs",
+          "$button_context": "Displays many crosshairs"
+        }
+      },
+      {
+        "ytilsimg": {
+          "size": [
+            "29.5",
+            4
+          ],
+          "texture": "origin/bg/clear",
+          "type": "image",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "default",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "crosshairstack": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [
+            "100%",
+            "100%c"
+          ],
+          "controls": [
+            {
+              "fst": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [
+                  "10%",
+                  27
+                ],
+                "controls": [
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "1",
+                      "$icon_texture": "origin/crosshair/default_crosshair",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "default_crosshair",
+                      "$toggle_default_state": "$crosshair_1",
+                      "$toggle_view_binding_name": "default_crosshair",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "rgb",
+                      "$icon_texture": "origin/crosshair/default_crosshair",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "default_crosshair_rgb",
+                      "$toggle_default_state": "$crosshair1rgb",
+                      "$toggle_view_binding_name": "default_crosshair_rgb",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "2",
+                      "$icon_texture": "origin/crosshair/1",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p1",
+                      "$toggle_default_state": "$crosshair2",
+                      "$toggle_view_binding_name": "p1",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "3",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p2",
+                      "$toggle_default_state": "$crosshair3",
+                      "$toggle_view_binding_name": "p2",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "4",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p3",
+                      "$toggle_default_state": "$crosshair4",
+                      "$toggle_view_binding_name": "p3",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "5",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p4",
+                      "$toggle_default_state": "$crosshair5",
+                      "$toggle_view_binding_name": "p4",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "6",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p5",
+                      "$toggle_default_state": "$crosshair6",
+                      "$toggle_view_binding_name": "p5",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "7",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p6",
+                      "$toggle_default_state": "$crosshair7",
+                      "$toggle_view_binding_name": "p6",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "8",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p7",
+                      "$toggle_default_state": "$crosshair8",
+                      "$toggle_view_binding_name": "p7",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "9",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p8",
+                      "$toggle_default_state": "$crosshair9",
+                      "$toggle_view_binding_name": "p8",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "fstp": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [
+                  "10%",
+                  27
+                ],
+                "controls": [
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "10",
+                      "$icon_texture": "origin/crosshair/default_crosshair",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p9",
+                      "$toggle_default_state": "$crosshair10",
+                      "$toggle_view_binding_name": "p9",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "11",
+                      "$icon_texture": "origin/crosshair/default_crosshair",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p10",
+                      "$toggle_default_state": "$crosshair11",
+                      "$toggle_view_binding_name": "p10",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "12",
+                      "$icon_texture": "origin/crosshair/1",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p11",
+                      "$toggle_default_state": "$crosshair12",
+                      "$toggle_view_binding_name": "p11",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "13",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p12",
+                      "$toggle_default_state": "$crosshair13",
+                      "$toggle_view_binding_name": "p12",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "14",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p13",
+                      "$toggle_default_state": "$crosshair14",
+                      "$toggle_view_binding_name": "p13",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "15",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p14",
+                      "$toggle_default_state": "$crosshair15",
+                      "$toggle_view_binding_name": "p14",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "16",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p15",
+                      "$toggle_default_state": "$crosshair16",
+                      "$toggle_view_binding_name": "p15",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "17",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p16",
+                      "$toggle_default_state": "$crosshair17",
+                      "$toggle_view_binding_name": "p16",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "18",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p17",
+                      "$toggle_default_state": "$crosshair18",
+                      "$toggle_view_binding_name": "p17",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "19",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p18",
+                      "$toggle_default_state": "$crosshair19",
+                      "$toggle_view_binding_name": "p18",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "fstj": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [
+                  "10%",
+                  27
+                ],
+                "controls": [
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "20",
+                      "$icon_texture": "origin/crosshair/default_crosshair",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p19",
+                      "$toggle_default_state": "$crosshair20",
+                      "$toggle_view_binding_name": "p19",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "21",
+                      "$icon_texture": "origin/crosshair/default_crosshair",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p20",
+                      "$toggle_default_state": "$crosshair21",
+                      "$toggle_view_binding_name": "p20",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "22",
+                      "$icon_texture": "origin/crosshair/1",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p21",
+                      "$toggle_default_state": "$crosshair22",
+                      "$toggle_view_binding_name": "p21",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "23",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p22",
+                      "$toggle_default_state": "$crosshair23",
+                      "$toggle_view_binding_name": "p22",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "24",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p23",
+                      "$toggle_default_state": "$crosshair24",
+                      "$toggle_view_binding_name": "p23",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "25",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p24",
+                      "$toggle_default_state": "$crosshair25",
+                      "$toggle_view_binding_name": "p24",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "26",
+                      "$icon_texture": "origin/crosshair/2",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p25",
+                      "$toggle_default_state": "$crosshair26",
+                      "$toggle_view_binding_name": "p25",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "27",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p26",
+                      "$toggle_default_state": "$crosshair27",
+                      "$toggle_view_binding_name": "p26",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "28",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p27",
+                      "$toggle_default_state": "$crosshair28",
+                      "$toggle_view_binding_name": "p27",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "image",
+                      "textures": "textures/items/diamond_sword",
+                      "alpha": 0,
+                      "size": [
+                        "1px",
+                        "1px"
+                      ]
+                    }
+                  },
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "29",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p28",
+                      "$toggle_default_state": "$crosshair29",
+                      "$toggle_view_binding_name": "p28",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "fstc": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [
+                  "10%",
+                  27
+                ],
+                "controls": [
+                  {
+                    "feature5@common_toggles.animated_toggle": {
+                      "$button_text": "30",
+                      "$icon_texture": "origin/crosshair/default_crosshair",
+                      "$radio_toggle_group": false,
+                      "$tab_view_binding_name": "p29",
+                      "$toggle_default_state": "$crosshair30",
+                      "$toggle_view_binding_name": "p29",
+                      "$button_context": "",
+                      "$text_offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        "100% - 1px",
+                        27
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "defaultt",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ],
+    "size": [
+      "100% - 2px",
+      "100%c"
+    ],
+    "type": "stack_panel"
+  },
+  "modulesfooter": {
+    "controls": [
+      {
+        "label_modules": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "font_scale_factor": 0.9,
+          "font_size": "large",
+          "font_type": "MinecraftTen",
+          "text": "MODULES",
+          "text_alignment": "center",
+          "type": "label"
+        }
+      }
+    ],
+    "layer": "99999",
+    "size": [
+      "100%",
+      "13%"
+    ],
+    "texture": "origin/bg/background_header",
+    "type": "image"
+  },
+  "namespace": "hud_modules",
+  "open_toggles": {
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "module@hud_modules.toggle_double": {
+          "$button_text": "",
+          "$default_selector_toggle_index": 1,
+          "$radio_toggle_group": false,
+          "$tab_view_binding_name": "ytils_hide_menu",
+          "$toggle_group_forced_index": 2,
+          "$toggle_name": "show_panel_button",
+          "$unchecked_control": "",
+          "$unchecked_hover_control": "",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ytils_hide_menu2",
+              "source_property_name": "(not #toggle_state)",
+              "target_property_name": "#visible"
+            }
+          ],
+          "size": [
+            96,
+            24
+          ]
+        }
+      }
+    ],
+    "offset": [
+      5,
+      5
+    ],
+    "orientation": "horizontal",
+    "size": [
+      "100%c",
+      24
+    ],
+    "type": "stack_panel"
+  },
+  "scroll_handle_image": {
+    "layer": 1,
+    "texture": "origin/ui/scroll_handle",
+    "type": "image"
+  },
+  "tabs_panel": {
+    "clip_childrens": false,
+    "controls": [
+      {
+        "firsttabs_panel": {
+          "clip_childrens": false,
+          "controls": [
+            {
+              "logo@hud_modules.logo": {
+                "size": [
+                  "100%",
+                  "100%"
+                ]
+              }
+            }
+          ],
+          "layer": 1000,
+          "orientation": "horizontal",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "type": "stack_panel"
+        }
+      }
+    ],
+    "layer": 1000,
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "type": "panel"
+  },
+  "text_tmp": {
+    "color": [
+      1,
+      1,
+      1
+    ],
+    "font_type": "font_type",
+    "text": "text",
+    "type": "label"
+  },
+  "toggle@hud_modules.toggle_panel": {
+    "$checked_control": "hud_modules.toggle_default_checked_control",
+    "$checked_hover_control": "hud_modules.toggle_default_checked_control",
+    "$unchecked_control": "hud_modules.toggle_default_unchecked_control",
+    "$unchecked_hover_control": "hud_modules.toggle_default_unchecked_hover_control"
+  },
+  "toggle_checked_control@base_toggle_icon": {
+    "$icon_texture": "origin/checkbox_on",
+    "color": [
+      1,
+      1,
+      1
+    ]
+  },
+  "toggle_default_checked_control@base_toggle_icon": {
+    "$icon_texture": "origin/checkbox_on",
+    "color": [
+      1,
+      1,
+      1
+    ]
+  },
+  "toggle_default_checked_hover_control@base_toggle_icon": {
+    "$icon_texture": "origin/checkbox",
+    "color": [
+      0.9,
+      0.9,
+      0.9
+    ]
+  },
+  "toggle_default_unchecked_control@base_toggle_icon": {
+    "$icon_texture": "origin/checkbox",
+    "color": [
+      0.9,
+      0.9,
+      0.9
+    ]
+  },
+  "toggle_default_unchecked_hover_control@base_toggle_icon": {
+    "$icon_texture": "origin/checkbox_on",
+    "color": [
+      1,
+      1,
+      1
+    ]
+  },
+  "toggle_double@toggle_panel_double": {
+    "$checked_control": "hud_modules.toggle_unchecked_hover_control",
+    "$checked_hover_control": "hud_modules.toggle_unchecked_hover_control",
+    "$unchecked_control": "hud_modules.toggle_unchecked_control",
+    "$unchecked_hover_control": "hud_modules.toggle_unchecked_hover_control"
+  },
+  "toggle_panel": {
+    "$binding_condition": "t",
+    "$binding_type": "global",
+    "$checked_control": "common.empty_panel",
+    "$checked_hover_control": "common.empty_panel",
+    "$checked_locked_control": "common.empty_panel",
+    "$checked_locked_hover_control": "common.empty_panel",
+    "$custom_from_button_id|default": "",
+    "$custom_mapping_type|default": "global",
+    "$custom_scope|default": "",
+    "$custom_to_button_id|default": "",
+    "$has_double_click_function|default": true,
+    "$is_back_button|default": false,
+    "$is_custom_button|default": true,
+    "$radio_toggle_group": true,
+    "$sound_name|default": "random.click",
+    "$sound_pitch|default": 1,
+    "$sound_volume|default": 1,
+    "$tab_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$toggle_focus_enabled": true,
+    "$unchecked_control": "common.empty_panel",
+    "$unchecked_hover_control": "common.empty_panel",
+    "$unchecked_locked_control": "common.empty_panel",
+    "$unchecked_locked_hover_control": "common.empty_panel",
+    "controls": [
+      {
+        "$tab_view_binding_name@common.toggle": {
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_select",
+              "mapping_type": "pressed",
+              "to_button_id": "button.menu_select"
+            },
+            {
+              "from_button_id": "button.menu_ok",
+              "mapping_type": "focused",
+              "to_button_id": "button.menu_ok"
+            },
+            {
+              "from_button_id": "button.menu_cancel",
+              "ignored": "(not $is_back_button)",
+              "mapping_type": "global",
+              "to_button_id": "button.menu_select"
+            },
+            {
+              "from_button_id": "$custom_from_button_id",
+              "ignored": "(not $is_custom_button)",
+              "mapping_type": "$custom_mapping_type",
+              "scope": "$custom_scope",
+              "to_button_id": "$custom_to_button_id"
+            }
+          ],
+          "size": "$tab_size",
+          "sound_name": "random.click",
+          "sound_pitch": "$sound_pitch",
+          "sound_volume": "$sound_volume"
+        }
+      },
+      {
+        "bg": {
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "texture": "origin/buttons/title_green_button/normal",
+          "type": "image"
+        }
+      }
+    ],
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "type": "panel"
+  },
+  "toggle_panel_double": {
+    "$binding_condition": "t",
+    "$binding_type": "global",
+    "$checked_control": "common.empty_panel",
+    "$checked_hover_control": "common.empty_panel",
+    "$checked_locked_control": "common.empty_panel",
+    "$checked_locked_hover_control": "common.empty_panel",
+    "$custom_from_button_id|default": "",
+    "$custom_mapping_type|default": "global",
+    "$custom_scope|default": "",
+    "$custom_to_button_id|default": "",
+    "$has_double_click_function|default": true,
+    "$is_back_button|default": false,
+    "$is_custom_button|default": true,
+    "$radio_toggle_group": true,
+    "$sound_name|default": "random.click",
+    "$sound_pitch|default": 1,
+    "$sound_volume|default": 1,
+    "$tab_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$toggle_focus_enabled": true,
+    "$unchecked_control": "common.empty_panel",
+    "$unchecked_hover_control": "common.empty_panel",
+    "$unchecked_locked_control": "common.empty_panel",
+    "$unchecked_locked_hover_control": "common.empty_panel",
+    "controls": [
+      {
+        "$tab_view_binding_name@common.toggle": {
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_select",
+              "mapping_type": "double_pressed",
+              "to_button_id": "button.menu_select"
+            },
+            {
+              "from_button_id": "button.menu_ok",
+              "mapping_type": "focused",
+              "to_button_id": "button.menu_ok"
+            },
+            {
+              "from_button_id": "button.menu_cancel",
+              "ignored": "(not $is_back_button)",
+              "mapping_type": "global",
+              "to_button_id": "button.menu_select"
+            },
+            {
+              "from_button_id": "$custom_from_button_id",
+              "ignored": "(not $is_custom_button)",
+              "mapping_type": "$custom_mapping_type",
+              "scope": "$custom_scope",
+              "to_button_id": "$custom_to_button_id"
+            }
+          ],
+          "size": "$tab_size",
+          "sound_name": "$sound_name",
+          "sound_pitch": "$sound_pitch",
+          "sound_volume": "$sound_volume"
+        }
+      }
+    ],
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "type": "panel"
+  },
+  "toggle_unchecked_control@base_toggle": {
+    "$text_color": [
+      1,
+      1,
+      1
+    ],
+    "$texture": "origin/buttons/title_green_button/normal",
+    "alpha": 1
+  },
+  "toggle_unchecked_hover_control@base_toggle": {
+    "$text_color": [
+      0,
+      0,
+      0
+    ],
+    "$texture": "origin/buttons/title_green_button/pressed",
+    "alpha": 1
+  },
+  "ytilsimg": {
+    "texture": "origin/bg/clear",
+    "type": "image"
+  },
+  "ytilsp": {
+    "type": "panel"
+  },
+  "ytilssp": {
+    "type": "stack_panel"
+  }
+}

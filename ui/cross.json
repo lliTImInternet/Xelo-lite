@@ -1,0 +1,638 @@
+{
+   "namespace": "cross",
+   "presetcrosshair": {
+      "type": "panel",
+      "controls": [
+         {
+            "defaultcrosshair@cross.defaultcrosshair": {}
+         },
+         {
+            "preset1@cross.preset1": {}
+         },
+         {
+            "preset2@cross.preset2": {}
+         },
+         {
+            "preset3@cross.preset3": {}
+         },
+         {
+            "preset4@cross.preset4": {}
+         },
+         {
+            "preset5@cross.preset5": {}
+         },
+         {
+            "preset6@cross.preset6": {}
+         },
+         {
+            "preset7@cross.preset7": {}
+         },
+         {
+            "preset8@cross.preset8": {}
+         },
+         {
+            "preset9@cross.preset9": {}
+         },
+         {
+            "preset10@cross.preset10": {}
+         },
+         {
+            "preset11@cross.preset11": {}
+         },
+         {
+            "preset12@cross.preset12": {}
+         },
+         {
+            "preset13@cross.preset13": {}
+         },
+         {
+            "preset14@cross.preset14": {}
+         },
+         {
+            "preset15@cross.preset15": {}
+         },
+         {
+            "preset16@cross.preset16": {}
+         },
+         {
+            "preset17@cross.preset17": {}
+         },
+         {
+            "preset18@cross.preset18": {}
+         },
+         {
+            "preset19@cross.preset19": {}
+         },
+         {
+            "preset20@cross.preset20": {}
+         },
+         {
+            "preset21@cross.preset21": {}
+         },
+         {
+            "preset22@cross.preset22": {}
+         },
+         {
+            "preset23@cross.preset23": {}
+         },
+         {
+            "preset24@cross.preset24": {}
+         },
+         {
+            "preset25@cross.preset25": {}
+         },
+         {
+            "preset26@cross.preset26": {}
+         },
+         {
+            "preset27@cross.preset27": {}
+         },
+         {
+            "preset28@cross.preset28": {}
+         },
+         {
+            "preset29@cross.preset29": {}
+         }
+      ]
+   },
+   "defaultcrosshair": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/default_crosshair",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "default_crosshair",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset1": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/1",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p1",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset2": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/2",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p2",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset3": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/3",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p3",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset4": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/4",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p4",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset5": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/5",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p5",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset6": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/6",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p6",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset7": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/7",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p7",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset8": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/8",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p8",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset9": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/9",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p9",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset10": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/10",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p10",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset11": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/11",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p11",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset12": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/12",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p12",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset13": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/13",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p13",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset14": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/14",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p14",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset15": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/15",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p15",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset16": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/16",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p16",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset17": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/17",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p17",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset18": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/18",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p18",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset19": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/19",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p19",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset20": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/20",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p20",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset21": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/21",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p21",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset22": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/22",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p22",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset23": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/23",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p23",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset24": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/24",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p24",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset25": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/25",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p25",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset26": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/26",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p26",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset27": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/27",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p27",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset28": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/28",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p28",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   },
+   "preset29": {
+      "type": "image",
+      "size": [
+         10,
+         10
+      ],
+      "anchor_from": "center",
+      "anchor_to": "center",
+      "texture": "origin/crosshair/29",
+      "bindings": [
+         {
+            "binding_type": "view",
+            "source_control_name": "p29",
+            "source_property_name": "#toggle_state",
+            "target_property_name": "#visible"
+         }
+      ]
+   }
+}

@@ -1,0 +1,278 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "materials": {
+        "default": "entity_alphatest",
+        "cape": "entity_alphafix",
+        "animated": "player_animated",
+        "spectator": "player_spectator"
+      },
+      "textures": {
+        "default": "textures/entity/steve",
+        "cape": "textures/entity/cape_invisible",
+        "chainmail_boots": "textures/items/chainmail_boots",
+        "chainmail_chestplate": "textures/items/chainmail_chestplate",
+        "chainmail_helmet": "textures/items/chainmail_helmet",
+        "chainmail_leggings": "textures/items/chainmail_leggings",
+        "diamond_boots": "textures/items/diamond_boots",
+        "diamond_chestplate": "textures/items/diamond_chestplate",
+        "diamond_helmet": "textures/items/diamond_helmet",
+        "diamond_leggings": "textures/items/diamond_leggings",
+        "elytra": "textures/items/elytra",
+        "gold_boots": "textures/items/gold_boots",
+        "gold_chestplate": "textures/items/gold_chestplate",
+        "gold_helmet": "textures/items/gold_helmet",
+        "gold_leggings": "textures/items/gold_leggings",
+        "iron_boots": "textures/items/iron_boots",
+        "iron_chestplate": "textures/items/iron_chestplate",
+        "iron_helmet": "textures/items/iron_helmet",
+        "iron_leggings": "textures/items/iron_leggings",
+        "leather_boots": "textures/items/leather_boots1",
+        "leather_chestplate": "textures/items/leather_chestplate1",
+        "leather_helmet": "textures/items/leather_helmet1",
+        "leather_leggings": "textures/items/leather_leggings1",
+        "netherite_boots": "textures/items/netherite_boots",
+        "netherite_chestplate": "textures/items/netherite_chestplate",
+        "netherite_helmet": "textures/items/netherite_helmet",
+        "netherite_leggings": "textures/items/netherite_leggings",
+        "turtle_helmet": "textures/items/turtle_helmet",
+        "offhand_slot": "textures/offhand_slot",
+        "shield": "textures/shield",
+        "arrow": "textures/items/arrow",
+        "firework": "textures/items/fireworks",
+        "shell": "textures/items/nautilus",
+        "totem": "textures/items/totem",
+        "map": "textures/items/map_filled",
+        "cape": "textures/entity/cape_invisible",
+        "down_on": "origin/keystrokes/down_on",
+        "down": "origin/keystrokes/down",
+        "left_on": "origin/keystrokes/left_on",
+        "left": "origin/keystrokes/left",
+        "right_on": "origin/keystrokes/right_on",
+        "right": "origin/keystrokes/right",
+        "up_on": "origin/keystrokes/up_on",
+        "up": "origin/keystrokes/up",
+        "space_on": "origin/keystrokes/space_on",
+        "space": "origin/keystrokes/space",
+        "blank": "origin/keystrokes/blank",
+        "frame1": "textures/entity/frame1",
+        "frame2": "textures/entity/frame2",
+        "frame3": "textures/entity/frame3",
+        "frame4": "textures/entity/frame4",
+        "frame5": "textures/entity/frame5",
+        "frame6": "textures/entity/frame6",
+        "frame7": "textures/entity/frame7",
+        "frame8": "textures/entity/frame8",
+        "frame9": "textures/entity/frame9",
+        "frame10": "textures/entity/frame10",
+        "frame11": "textures/entity/frame11",
+        "frame12": "textures/entity/frame12",
+        "frame13": "textures/entity/frame13",
+        "frame14": "textures/entity/frame14",
+        "frame15": "textures/entity/frame15"
+      },
+      "geometry": {
+        "default": "geometry.humanoid.custom",
+        "custom": "geometry.custom",
+        "cape": "geometry.cape",
+        "helmet": "geometry.helmet",
+        "chestplate": "geometry.chestplate",
+        "leggings": "geometry.leggings",
+        "boots": "geometry.boots",
+        "offhand_slot": "geometry.offhand_slot",
+        "offhand_slot_bg": "geometry.offhand_slot_bg",
+        "key": "geometry.key"
+      },
+      "scripts": {
+        "scale": "0.9375",
+        "initialize": [
+          "variable.is_holding_right = 0.0;",
+          "variable.render = 0.0;",
+          "variable.is_blinking = 0.0;",
+          "variable.last_blink_time = 0.0;",
+          "variable.hand_bob = 0.0;",
+          "variable.helmet_enchanted = 0.0;",
+          "variable.chestplate_enchanted = 0.0;",
+          "variable.leggings_enchanted = 0.0;",
+          "variable.boots_enchanted = 0.0;",
+          "variable.is_walking_north = 0.0;",
+          "variable.is_walking_west = 0.0;",
+          "variable.is_walking_south = 0.0;",
+          "variable.is_walking_east = 0.0;",
+          "variable.is_facing_north = 0.0;",
+          "variable.is_facing_west = 0.0;",
+          "variable.is_facing_south = 0.0;",
+          "variable.is_facing_east = 0.0;",
+          "variable.temp_w = 0.0;",
+          "variable.temp_a = 0.0;",
+          "variable.temp_s = 0.0;",
+          "variable.temp_d = 0.0;",
+          "variable.is_w = 0.0;",
+          "variable.is_a = 0.0;",
+          "variable.is_s = 0.0;",
+          "variable.is_d = 0.0;",
+          "variable.keystroke = 0.0;",
+          "variable.speed = 0.0;"
+        ],
+        "pre_animation": [
+          "temp.chyves_rotation = temp.chyves_rotation ?? 0;",
+          "variable.speed = query.is_moving ? (query.ground_speed - query.vertical_speed) : 0;",
+          "variable.keystroke = Math.mod(360 + Math.mod(Math.atan2(query.position_delta(0), query.position_delta(2)) + query.head_y_rotation(0), 360), 360);",
+          "variable.is_walking_north = variable.speed > 0.05 && ((variable.keystroke >= 23) && (variable.keystroke <= 157));",
+          "variable.is_walking_west = variable.speed > 0.05 && ((variable.keystroke >= 112) && (variable.keystroke <= 248));",
+          "variable.is_walking_south = variable.speed > 0.05 && ((variable.keystroke >= 203) && (variable.keystroke <= 337));",
+          "variable.is_walking_east = variable.speed > 0.05 && (((variable.keystroke >= 293) && (variable.keystroke <= 360)) || ((variable.keystroke >= 0) && (variable.keystroke <= 67)));",
+          "variable.is_facing_north = variable.speed > 0.05 && ((temp.chyves_rotation >= 23) && (temp.chyves_rotation <= 157));",
+          "variable.is_facing_east = variable.speed > 0.05 && ((temp.chyves_rotation >= 112) && (temp.chyves_rotation <= 248));",
+          "variable.is_facing_south = variable.speed > 0.05 && ((temp.chyves_rotation >= 203) && (temp.chyves_rotation <= 337));",
+          "variable.is_facing_west = variable.speed > 0.05 && (((temp.chyves_rotation >= 293) && (temp.chyves_rotation <= 360)) || ((temp.chyves_rotation >= 0) && (temp.chyves_rotation <= 67)));",
+          "variable.temp_w = (variable.is_walking_north && variable.is_facing_north) || (variable.is_walking_west && variable.is_facing_west) || (variable.is_walking_south && variable.is_facing_south) || (variable.is_walking_east && variable.is_facing_east);",
+          "variable.temp_a = (variable.is_walking_west && variable.is_facing_north) || (variable.is_walking_south && variable.is_facing_west) || (variable.is_walking_east && variable.is_facing_south) || (variable.is_walking_north && variable.is_facing_east);",
+          "variable.temp_s = (variable.is_walking_north && variable.is_facing_south) || (variable.is_walking_south && variable.is_facing_north) || (variable.is_walking_west && variable.is_facing_east) || (variable.is_walking_east && variable.is_facing_west);",
+          "variable.temp_d = (variable.is_walking_east && variable.is_facing_north) || (variable.is_walking_north && variable.is_facing_west) || (variable.is_walking_west && variable.is_facing_south) || (variable.is_walking_south && variable.is_facing_east);",
+          "variable.is_w = (variable.temp_w && variable.temp_s) ? 0 : variable.temp_w;",
+          "variable.is_a = (variable.temp_a && variable.temp_d) ? 0 : variable.temp_a;",
+          "variable.is_s = (variable.temp_s && variable.temp_w) ? 0 : variable.temp_s;",
+          "variable.is_d = (variable.temp_d && variable.temp_a) ? 0 : variable.temp_d;",
+          "variable.helmet_enchanted = query.armor_material_slot(0) == 1 || query.armor_material_slot(0) == 3;",
+          "variable.chestplate_enchanted = query.armor_material_slot(1) == 1 || query.armor_material_slot(1) == 3;",
+          "variable.leggings_enchanted = query.armor_material_slot(2) == 1 || query.armor_material_slot(2) == 3;",
+          "variable.boots_enchanted = query.armor_material_slot(3) == 1 || query.armor_material_slot(3) == 3;",
+          "variable.helmet_layer_visible = 1.0;",
+          "variable.leg_layer_visible = 1.0;",
+          "variable.boot_layer_visible = 1.0;",
+          "variable.chest_layer_visible = 1.0;",
+          "variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;",
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+          "variable.first_person_rotation_factor = math.sin((1 - variable.attack_time) * 180.0);",
+          "variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
+          "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
+          "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
+        ],
+        "animate": [
+          "chyves",
+          "root",
+          "helmet",
+          "chestplate",
+          "leggings",
+          "boots",
+          "offhand_hud",
+          {
+            "render": "query.is_in_ui"
+          }
+        ]
+      },
+      "animations": {
+        "chyves": "animation.chyves.keystrokes",
+        "render": "animation.render",
+        "custom": "animation.custom",
+        "helmet": "animation.player.helmet",
+        "chestplate": "animation.player.chestplate",
+        "leggings": "animation.player.leggings",
+        "boots": "animation.player.boots",
+        "root": "controller.animation.player.root",
+        "base_controller": "controller.animation.player.base",
+        "hudplayer": "controller.animation.player.hudplayer",
+        "humanoid_base_pose": "animation.humanoid.base_pose",
+        "look_at_target": "controller.animation.humanoid.look_at_target",
+        "look_at_target_ui": "animation.player.look_at_target.ui",
+        "look_at_target_default": "animation.humanoid.look_at_target.default",
+        "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+        "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+        "look_at_target_inverted": "animation.player.look_at_target.inverted",
+        "cape": "animation.player.cape",
+        "move.arms": "animation.player.move.arms",
+        "move.legs": "animation.player.move.legs",
+        "swimming": "animation.player.swim",
+        "swimming.legs": "animation.player.swim.legs",
+        "riding.arms": "animation.player.riding.arms",
+        "riding.legs": "animation.player.riding.legs",
+        "holding": "animation.player.holding",
+        "brandish_spear": "animation.humanoid.brandish_spear",
+        "charging": "animation.humanoid.charging",
+        "attack.positions": "animation.player.attack.positions",
+        "attack.rotations": "animation.player.attack.rotations",
+        "sneaking": "animation.player.sneaking",
+        "bob": "animation.player.bob",
+        "damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
+        "fishing_rod": "animation.humanoid.fishing_rod",
+        "use_item_progress": "animation.humanoid.use_item_progress",
+        "skeleton_attack": "animation.skeleton.attack",
+        "sleeping": "animation.player.sleeping",
+        "first_person_base_pose": "animation.player.first_person.base_pose",
+        "first_person_empty_hand": "animation.player.first_person.empty_hand",
+        "first_person_swap_item": "animation.player.first_person.swap_item",
+        "first_person_attack_controller": "controller.animation.player.first_person_attack",
+        "first_person_attack_rotation": "animation.player.first_person.attack_rotation",
+        "first_person_vr_attack_rotation": "animation.player.first_person.vr_attack_rotation",
+        "first_person_map_controller": "controller.animation.player.first_person_map",
+        "first_person_map_hold": "animation.player.first_person.map_hold",
+        "first_person_map_hold_attack": "animation.player.first_person.map_hold_attack",
+        "first_person_map_hold_off_hand": "animation.player.first_person.map_hold_off_hand",
+        "first_person_map_hold_main_hand": "animation.player.first_person.map_hold_main_hand",
+        "first_person_crossbow_equipped": "animation.player.first_person.crossbow_equipped",
+        "third_person_crossbow_equipped": "animation.player.crossbow_equipped",
+        "third_person_bow_equipped": "animation.player.bow_equipped",
+        "crossbow_hold": "animation.player.crossbow_hold",
+        "crossbow_controller": "controller.animation.player.crossbow",
+        "shield_block_main_hand": "animation.player.shield_block_main_hand",
+        "shield_block_off_hand": "animation.player.shield_block_off_hand",
+        "blink": "controller.animation.persona.blink",
+        "offhand_hud": "animation.offhand_hud"
+      },
+      "render_controllers": [
+        {
+          "controller.render.player.first_person": "variable.is_first_person"
+        },
+        {
+          "controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon"
+        },
+        {
+          "controller.render.player.map": "variable.map_face_icon"
+        },
+        {
+          "controller.render.helmet": "query.has_armor_slot(0) && query.is_in_ui"
+        },
+        {
+          "controller.render.chestplate": "query.has_armor_slot(1) && query.is_in_ui"
+        },
+        {
+          "controller.render.leggings": "query.has_armor_slot(2) && query.is_in_ui"
+        },
+        {
+          "controller.render.boots": "query.has_armor_slot(3) && query.is_in_ui"
+        },
+        {
+          "controller.render.offhand_slots": "q.is_alive && q.is_in_ui && !q.is_riding"
+        },
+        {
+          "controller.render.offhand_slots_background": "q.is_alive && q.is_in_ui && !q.is_riding"
+        },
+        {
+          "controller.render.key.w": "query.is_in_ui && !variable.is_paperdoll"
+        },
+        {
+          "controller.render.key.a": "query.is_in_ui && !variable.is_paperdoll"
+        },
+        {
+          "controller.render.key.s": "query.is_in_ui && !variable.is_paperdoll"
+        },
+        {
+          "controller.render.key.d": "query.is_in_ui && !variable.is_paperdoll"
+        },
+        {
+          "controller.render.key.space": "query.is_in_ui && !variable.is_paperdoll"
+        },
+        {
+          "controller.render.rotation": "variable.is_paperdoll"
+        },
+        {
+          "controller.render.cape": "!variable.is_first_person && (variable.is_paperdoll || query.is_local_player) && !variable.map_face_icon && query.armor_texture_slot(1) != 5 && !query.is_spectator"
+        }
+      ],
+      "enable_attachables": true
+    }
+  }
+}

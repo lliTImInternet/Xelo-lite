@@ -1,0 +1,77 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.player.helmet": {
+            "loop": true,
+            "bones": {
+                "helmet": {
+                    "rotation": [
+                        0,
+                        0,
+                        0.0
+                    ],
+                    "position": [
+                        -30,
+                        695,
+                        20
+                    ],
+                    "scale": 1.5
+                }
+            }
+        },
+        "animation.player.chestplate": {
+            "loop": true,
+            "bones": {
+                "chestplate": {
+                    "rotation": [
+                        0,
+                        0,
+                        0.0
+                    ],
+                    "position": [
+                        -30,
+                        670,
+                        0
+                    ],
+                    "scale": 1.5
+                }
+            }
+        },
+        "animation.player.leggings": {
+            "loop": true,
+            "bones": {
+                "leggings": {
+                    "rotation": [
+                        0,
+                        0,
+                        0.0
+                    ],
+                    "position": [
+                        -30,
+                        645,
+                        20
+                    ],
+                    "scale": 1.5
+                }
+            }
+        },
+        "animation.player.boots": {
+            "loop": true,
+            "bones": {
+                "boots": {
+                    "rotation": [
+                        0,
+                        0,
+                        0.0
+                    ],
+                    "position": [
+                        -30,
+                        620,
+                        20
+                    ],
+                    "scale": 1.5
+                }
+            }
+        }
+    }
+}

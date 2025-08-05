@@ -1,0 +1,63 @@
+/*File made with help of @CrisXolt.
+//(c) Thank you Cris <3*/ 
+
+{
+  "namespace": "crosshair",
+
+   "crosshair": {
+    "type": "image",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [ 16, 16 ],
+    "texture": "textures/chroma/c0",
+    "color": "@crosshair.rgb_color_cycle_01"
+  },
+
+  "rgb_color_base": {
+    "anim_type": "color",
+    "duration":  0.05,
+    "from": "$color_value",
+    "to": "$color_value"
+  },
+
+  "rgb_color_cycle_01@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_02", "$color_value": [ 0.250, 1.000, 1.000 ] },
+  "rgb_color_cycle_02@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_03", "$color_value": [ 0.250, 1.000, 0.900 ] },
+  "rgb_color_cycle_03@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_04", "$color_value": [ 0.250, 1.000, 0.800 ] },
+  "rgb_color_cycle_04@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_05", "$color_value": [ 0.250, 1.000, 0.700 ] },
+  "rgb_color_cycle_05@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_06", "$color_value": [ 0.250, 1.000, 0.600 ] },
+  "rgb_color_cycle_06@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_07", "$color_value": [ 0.250, 1.000, 0.500 ] },
+  "rgb_color_cycle_07@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_08", "$color_value": [ 0.250, 1.000, 0.400 ] },
+  "rgb_color_cycle_08@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_09", "$color_value": [ 0.250, 1.000, 0.250 ] },
+  "rgb_color_cycle_09@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_10", "$color_value": [ 0.375, 1.000, 0.250 ] },
+  "rgb_color_cycle_10@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_11", "$color_value": [ 0.500, 1.000, 0.250 ] },
+  "rgb_color_cycle_11@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_12", "$color_value": [ 0.625, 1.000, 0.250 ] },
+  "rgb_color_cycle_12@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_13", "$color_value": [ 0.750, 1.000, 0.250 ] },
+  "rgb_color_cycle_13@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_14", "$color_value": [ 0.875, 1.000, 0.250 ] },
+  "rgb_color_cycle_14@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_15", "$color_value": [ 1.000, 1.000, 0.250 ] },
+  "rgb_color_cycle_15@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_16", "$color_value": [ 1.000, 0.900, 0.250 ] },
+  "rgb_color_cycle_16@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_17", "$color_value": [ 1.000, 0.800, 0.250 ] },
+  "rgb_color_cycle_17@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_18", "$color_value": [ 1.000, 0.700, 0.250 ] },
+  "rgb_color_cycle_18@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_19", "$color_value": [ 1.000, 0.600, 0.250 ] },
+  "rgb_color_cycle_19@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_20", "$color_value": [ 1.000, 0.500, 0.250 ] },
+  "rgb_color_cycle_20@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_21", "$color_value": [ 1.000, 0.400, 0.250 ] },
+  "rgb_color_cycle_21@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_22", "$color_value": [ 1.000, 0.250, 0.250 ] },
+  "rgb_color_cycle_22@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_23", "$color_value": [ 1.000, 0.250, 0.400 ] },
+  "rgb_color_cycle_23@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_24", "$color_value": [ 1.000, 0.250, 0.500 ] },
+  "rgb_color_cycle_24@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_25", "$color_value": [ 1.000, 0.250, 0.600 ] },
+  "rgb_color_cycle_25@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_26", "$color_value": [ 1.000, 0.250, 0.700 ] },
+  "rgb_color_cycle_26@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_27", "$color_value": [ 1.000, 0.250, 0.800 ] },
+  "rgb_color_cycle_27@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_28", "$color_value": [ 1.000, 0.250, 0.900 ] },
+  "rgb_color_cycle_28@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_29", "$color_value": [ 1.000, 0.250, 1.000 ] },
+  "rgb_color_cycle_29@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_30", "$color_value": [ 0.875, 0.250, 1.000 ] },
+  "rgb_color_cycle_30@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_31", "$color_value": [ 0.750, 0.250, 1.000 ] },
+  "rgb_color_cycle_31@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_32", "$color_value": [ 0.625, 0.250, 1.000 ] },
+  "rgb_color_cycle_32@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_33", "$color_value": [ 0.500, 0.250, 1.000 ] },
+  "rgb_color_cycle_33@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_34", "$color_value": [ 0.375, 0.250, 1.000 ] },
+  "rgb_color_cycle_34@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_35", "$color_value": [ 0.250, 0.250, 1.000 ] },
+  "rgb_color_cycle_35@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_36", "$color_value": [ 0.250, 0.400, 1.000 ] },
+  "rgb_color_cycle_36@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_37", "$color_value": [ 0.250, 0.500, 1.000 ] },
+  "rgb_color_cycle_37@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_38", "$color_value": [ 0.250, 0.600, 1.000 ] },
+  "rgb_color_cycle_38@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_39", "$color_value": [ 0.250, 0.700, 1.000 ] },
+  "rgb_color_cycle_39@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_40", "$color_value": [ 0.250, 0.800, 1.000 ] },
+  "rgb_color_cycle_40@crosshair.rgb_color_base": { "next": "@crosshair.rgb_color_cycle_01", "$color_value": [ 0.250, 0.900, 1.000 ] }
+}

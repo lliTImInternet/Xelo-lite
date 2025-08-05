@@ -1,0 +1,104 @@
+{
+   "format_version": "1.8.0",
+   "render_controllers": {
+      "controller.render.key.w": {
+         "geometry": "Geometry.key",
+         "materials": [
+            {
+               "*": "Material.entity_alphablend"
+            }
+         ],
+         "textures": [
+            "variable.is_w ? texture.up_on : texture.up"
+         ],
+         "filter_lighting": true,
+         "ignore_lighting": true,
+         "light_color_multiplier": 1.25,
+         "is_hurt_color": {
+            "a": "return 0.0;"
+         }
+      },
+      "controller.render.key.a": {
+         "geometry": "Geometry.key",
+         "materials": [
+            {
+               "*": "Material.entity_alphablend"
+            }
+         ],
+         "textures": [
+            "variable.is_a ? texture.left_on : texture.left"
+         ],
+         "filter_lighting": true,
+         "ignore_lighting": true,
+         "light_color_multiplier": 1.25,
+         "is_hurt_color": {
+            "a": "return 0.0;"
+         }
+      },
+      "controller.render.key.s": {
+         "geometry": "Geometry.key",
+         "materials": [
+            {
+               "*": "Material.entity_alphablend"
+            }
+         ],
+         "textures": [
+            "variable.is_s ? texture.down_on : texture.down"
+         ],
+         "filter_lighting": true,
+         "ignore_lighting": true,
+         "light_color_multiplier": 1.25,
+         "is_hurt_color": {
+            "a": "return 0.0;"
+         }
+      },
+      "controller.render.key.d": {
+         "geometry": "Geometry.key",
+         "materials": [
+            {
+               "*": "Material.entity_alphablend"
+            }
+         ],
+         "textures": [
+            "variable.is_d ? texture.right_on : texture.right"
+         ],
+         "filter_lighting": true,
+         "ignore_lighting": true,
+         "light_color_multiplier": 1.25,
+         "is_hurt_color": {
+            "a": "return 0.0;"
+         }
+      },
+      "controller.render.key.space": {
+         "geometry": "Geometry.key",
+         "materials": [
+            {
+               "*": "Material.entity_alphablend"
+            }
+         ],
+         "textures": [
+            "query.is_jumping ? texture.space_on : texture.space"
+         ],
+         "filter_lighting": true,
+         "ignore_lighting": true,
+         "light_color_multiplier": 1.25,
+         "is_hurt_color": {
+            "a": "return 0.0;"
+         }
+      },
+      "controller.render.rotation": {
+         "geometry": "Geometry.default",
+         "materials": [
+            {
+               "*": "Material.entity_alphablend"
+            }
+         ],
+         "textures": [
+            "temp.chyves_rotation = 180 + query.camera_rotation(1); return Texture.blank;"
+         ],
+         "filter_lighting": true,
+         "ignore_lighting": true,
+         "light_color_multiplier": 1.25
+      }
+   }
+}
