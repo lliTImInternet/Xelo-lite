@@ -1,2 +1,2 @@
-# Origin-lite
-Open source and fast lite Texture Pack version of Origin Client
+# Xelo-lite
+Open source and fast lite Texture Pack version of Xelo Client
